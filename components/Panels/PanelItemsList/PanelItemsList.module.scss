@@ -1,0 +1,81 @@
+.panelItemsList {
+  width: 72px;
+  // background: #fff;
+  color: #fff;
+}
+
+.panelItemsListItem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 72px;
+  text-align: center;
+  font-size: 0.8rem;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.2s;
+  color: rgba($color: #ffffff, $alpha: 0.8);
+  &:hover {
+    color: rgba($color: #ffffff, $alpha: 1);
+  }
+  &.active {
+    background: #fff;
+    color: rgba($color: #ffffff, $alpha: 1);
+  }
+  span {
+    padding-top: 0.2rem;
+  }
+}
+
+.panelMenuItem {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  position: relative;
+  &.active {
+    background: #fff;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(52, 234, 255, 1) 0%,
+        rgba(50, 138, 255, 1) 100%
+      );
+      border-radius: 2px 0px 0px 2px;
+    }
+  }
+  .logo {
+    width: 24px;
+    font-size: 20px;
+    margin-bottom: 6px;
+    background: linear-gradient(
+      270deg,
+      rgba(52, 234, 255, 1) 0%,
+      rgba(50, 138, 255, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  &.musicItem {
+    .logo {
+      font-size: 24px;
+    }
+  }
+  .text {
+    font-size: 14px;
+    color: #00a7ff;
+  }
+}
+

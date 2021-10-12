@@ -1,0 +1,14 @@
+.panelItemContainer {
+  width: 0;
+  transition: width 0.5s;
+  position: relative;
+  overflow: hidden;
+  &.open {
+    width: 330px;
+  }
+}
+.panelItem {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

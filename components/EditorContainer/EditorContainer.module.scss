@@ -1,0 +1,43 @@
+.editorContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: #ecf0f1;
+  flex: 1;
+  > .editorBottomContainer {
+    display: flex;
+    flex: 1;
+    > .editorBottomRightContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.editorTopMenu {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  height: 60px;
+  border: 1px solid grey;
+}
+
+.editor {
+  // display: flex;
+  flex-grow: 1;
+}
+
+.editorPane {
+  width: 268px;
+  overflow: auto;
+  bottom: 0;
+  padding: 14px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  background-color: #fff;
+  z-index: 100;
+  position: relative;
+  height: 100%;
+}
