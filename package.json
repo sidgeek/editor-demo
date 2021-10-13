@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
+    "fabric": "^4.6.0",
+    "lodash": "^4.17.21",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-custom-scrollbars": "^4.2.1",
@@ -18,6 +20,8 @@
     "sass": "^1.42.1"
   },
   "devDependencies": {
+    "@types/fabric": "^4.5.3",
+    "@types/lodash": "^4.14.175",
     "@types/react": "17.0.27",
     "@types/react-custom-scrollbars": "^4.0.8",
     "@typescript-eslint/eslint-plugin": "^5.0.0",

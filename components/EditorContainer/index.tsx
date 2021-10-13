@@ -1,3 +1,4 @@
+import CanvasEditor from '@components/CanvasEditor'
 import EditPanel from '@components/EditPanel'
 import TopMenu from '@components/TopMenu'
 import React from 'react'
@@ -15,7 +16,7 @@ export default function EditorContainer() {
         <Panels />
         <div className={styles.editorBottomRightContainer}>
           <div id="pane" className={styles.editor}>
-            pane
+            <CanvasEditor />
           </div>
           <div className={styles.editorPane}>
             <EditPanel />

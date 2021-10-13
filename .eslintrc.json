@@ -8,7 +8,10 @@
   "rules": {
     // I suggest you add those two rules:
     "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn"
   }
